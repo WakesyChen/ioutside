@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_myessay_item"
+    android:layout_width="match_parent"
+    android:background="@color/bg_lay_news"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lay_info_news"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.xiaoxiang.ioutside.common.CircleImageView
+            android:id="@+id/cirimg_userphoto_news"
+            android:layout_marginTop="6.6dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:layout_marginBottom="6.6dp"
+            android:layout_width="46.6dp"
+            android:layout_height="46.6dp" />
+
+        <TextView
+            android:id="@+id/tv_username_news"
+            android:layout_toRightOf="@id/cirimg_userphoto_news"
+            android:text="dfjdslfdj"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/tv_userinfo_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_msg_news"
+            android:layout_toRightOf="@id/cirimg_userphoto_news"
+            android:layout_below="@id/tv_username_news"
+            android:text="fdjfldskf"
+            android:textSize="12sp"
+            android:textColor="@color/tv_msg_news"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_commentcon_news"
+        android:layout_below="@id/lay_info_news"
+        android:textSize="14sp"
+        android:textColor="@color/tv_span_subcon"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/nouse_line_news"
+        android:layout_below="@id/tv_commentcon_news"
+        android:background="@color/img_line_news"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/item_lay_my_news"
+        android:layout_below="@id/nouse_line_news"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/my_essayphoto_news"
+            android:layout_marginTop="6.6dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="6.6dp"
+            android:layout_width="66.6dp"
+            android:layout_height="66.6dp" />
+
+        <TextView
+            android:id="@+id/my_essaytitle_news"
+            android:textColor="@color/midlle3_item_title"
+            android:textSize="14sp"
+            android:text="dsfdsfdsfd"
+            android:layout_toRightOf="@id/my_essayphoto_news"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@id/my_essayphoto_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:id="@+id/lay_likedandcom_news"
+            android:layout_below="@id/my_essaytitle_news"
+            android:layout_alignBottom="@id/my_essayphoto_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/lay_commentnum_news"
+                android:layout_marginRight="19.3dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_comment_news"
+                    android:src="@drawable/pl"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="16.6dp"
+                    android:layout_height="16.6dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_commentCount_news"
+                    android:textSize="8sp"
+                    android:text="30"
+                    android:layout_alignTop="@id/img_comment_news"
+                    android:layout_toRightOf="@id/img_comment_news"
+                    android:textColor="@color/likedCount_commentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_likednum_news"
+                android:layout_marginRight="19.3dp"
+                android:layout_toLeftOf="@id/lay_commentnum_news"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img_liked_news"
+                    android:src="@drawable/zan"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="16.6dp"
+                    android:layout_height="16.6dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_likedCount_news"
+                    android:textSize="8sp"
+                    android:text="30"
+                    android:layout_alignTop="@id/img_liked_news"
+                    android:layout_toRightOf="@id/img_liked_news"
+                    android:textColor="@color/likedCount_commentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/nouse_line2_news"
+            android:layout_alignParentBottom="true"
+            android:background="@color/img_line_news"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_white">
+
+
+    <com.xiaoxiang.ioutside.mine.widget.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.xiaoxiang.ioutside.mine.widget.TitleLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/bg_item_divider"
+        android:paddingLeft="11dp"
+        android:id="@+id/layout_liked"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/src_liked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:textSize="17sp"
+            android:text="被赞" />
+
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:visibility="invisible"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:id="@+id/tv_notification_liked"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/red_dot"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/bg_item_divider"
+        android:id="@+id/layout_collected"
+        android:paddingLeft="11dp" android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/src_collected" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:textSize="17sp"
+            android:text="被收藏" />
+
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:visibility="invisible"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/red_dot"
+            android:id="@+id/tv_notification_collected"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/bg_item_divider"
+        android:id="@+id/layout_commented"
+        android:layout_width="match_parent"
+        android:paddingLeft="11dp"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/src_commented" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:textSize="17sp"
+            android:text="评论" />
+
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:visibility="invisible"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/red_dot"
+            android:id="@+id/tv_notification_comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/bg_item_divider"
+        android:id="@+id/layout_official_assistant"
+        android:paddingLeft="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/head_ele" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="官方小助手" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_notification_shortcut"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="亲爱的用户........" />-->
+
+        </LinearLayout>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/red_dot"
+            android:id="@+id/tv_notification_official"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

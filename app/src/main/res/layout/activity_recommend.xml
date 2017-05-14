@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recommend_relativeLayout">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/recommend_swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recommend_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fbfbfb"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/recommend_footer_comment"
+            android:background="@drawable/edittext_shape"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:focusable="false"
+            android:hint="评论"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/recommend_function_comment"
+            android:src="@drawable/comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/recommend_footer_comment"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/recommend_footer_commentCount"
+            android:textSize="12sp"
+            android:textColor="@color/likedCount_commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@id/recommend_function_comment" />
+
+        <ImageView
+            android:id="@+id/recommend_function_zan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="27dp"
+            android:src="@drawable/zan_normal"
+            android:layout_toEndOf="@id/recommend_footer_commentCount"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/recommend_footer_likedCount"
+            android:textSize="12sp"
+            android:textColor="@color/likedCount_commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@id/recommend_function_zan" />
+
+        <ImageView
+            android:id="@+id/recommend_function_collect"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_title"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="48.6dp" />
+
+    <RelativeLayout
+        android:id="@+id/lay_subtype_moresub"
+        android:layout_below="@id/tv_title"
+        android:background="@color/log_in_background"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="43.3dp">
+
+        <TextView
+            android:id="@+id/tv_sea_sub"
+            android:text="水上"
+            android:textSize="16.6sp"
+            android:textColor="@color/tv_secondtop2"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/nouse_line1_sub"
+            android:background="@color/tv_secondtop2"
+            android:layout_marginRight="30.3dp"
+            android:layout_toLeftOf="@id/tv_sea_sub"
+            android:layout_centerVertical="true"
+            android:layout_width="0.3dp"
+            android:layout_height="23.3dp" />
+
+        <ImageView
+            android:id="@+id/nouse_line2_sub"
+            android:background="@color/tv_secondtop2"
+            android:layout_marginLeft="30.3dp"
+            android:layout_toRightOf="@id/tv_sea_sub"
+            android:layout_centerVertical="true"
+            android:layout_width="0.3dp"
+            android:layout_height="23.3dp" />
+
+        <TextView
+            android:id="@+id/tv_all_sub"
+            android:text="综合"
+            android:layout_toLeftOf="@id/nouse_line1_sub"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30.1dp"
+            android:textSize="16.6sp"
+            android:textColor="@color/tv_secondtop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_land_sub"
+            android:text="陆地"
+            android:layout_toRightOf="@id/nouse_line2_sub"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.1dp"
+            android:textSize="16.6sp"
+            android:textColor="@color/tv_secondtop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_subjects"
+        android:layout_below="@id/lay_subtype_moresub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>

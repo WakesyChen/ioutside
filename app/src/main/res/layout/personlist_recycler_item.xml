@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    
+    <RadioButton
+        android:id="@+id/personlist_rbtn"
+        android:layout_marginLeft="10dp"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:button="@null"
+        android:enabled="false"
+        android:background="@drawable/selector_personlist"
+       />
+
+    <TextView
+        android:id="@+id/personlist_name"
+        android:textSize="17sp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="陈希"/>
+
+    <TextView
+        android:id="@+id/personlist_phone"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="电话 15623786928"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/personlist_modify"
+        android:layout_marginRight="20dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/personlist_modify"/>
+
+</LinearLayout>

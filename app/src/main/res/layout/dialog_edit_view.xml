@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@color/item_divider"
+                android:layout_height="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="户外经历"
+                android:layout_gravity="left|center_vertical"
+                android:textSize="14sp"
+                android:textColor="#b0b0b0"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@color/item_divider"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_input_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="点击编辑你的户外经历"
+            android:paddingBottom="11dp"
+            android:textColor="#909090"
+            android:textColorHint="#b0b0b0"
+            android:textSize="15sp"
+            tools:text="坤哥" />
+
+        <ImageView
+            android:src="@color/item_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:textColor="#4f4f4f"
+                android:text="取消"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:textColor="#4f4f4f"
+                android:textSize="14sp"
+                android:text="确定"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

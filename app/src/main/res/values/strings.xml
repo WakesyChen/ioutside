@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">爱户外</string>
+    <string name="action_settings">Settings</string>
+    <string name="bottom_text_homepage">首页</string>
+    <string name="bottom_text_discovery">发现</string>
+    <string name="bottom_text_me">我</string>
+    <string name="med_type_essay_user">文章</string>
+    <string name="med_type_news_user">动态</string>
+    <string name="med_type_observer_user">关注</string>
+    <string name="med_type_fans_user">粉丝</string>
+    <string name="med_textview_news_user">消息</string>
+    <string name="med_textview_coll_user">收藏</string>
+    <string name="med_textview_feed_user">意见反馈</string>
+    <string name="med_textview_set_user">设置</string>
+    <string name="med_textview_newsnum_user">条消息</string>
+    <string name="order_success_notice">稍后将会有验证码（报名凭证）发送到您的手机，请注意查收并妥善保管。
+        若未收到短信请加官方微信账号：户小外（ioutside3）
+        咨询工作人员。</string>
+
+
+    <string name="top_textview_curscore_user">现有积分</string>
+    <string name="top_textview_allscore_user">历史总积分</string>
+    <string name="top_tv_level_user">等级</string>
+    <string name="top_tv_con_user">（等级取历史最高分）</string>
+    <string name="med_tv_getscore">如何获取积分</string>
+    <string name="med_tv_login">新用户注册</string>
+    <string name="med_tv_cominfo">完善个人信息</string>
+    <string name="med_tv_shareAPP">分享APP给朋友</string>
+    <string name="med_tv_likeandcom">喜欢、评论他人信息</string>
+    <string name="med_tv_liked">发布的内容被他人喜欢、评论和分享</string>
+    <string name="med_tv_share">分享内容到第三方</string>
+    <string name="med_tv_othaward">另外奖励（不算在每日限额100分里）</string>
+    <string name="med_tv_selectedtofound">动态被选入“发现·推荐”</string>
+    <string name="med_tv_recomtowellchosen">推荐的文章经审核后，加入精选</string>
+    <string name="med_tv_writetowellchosen">原创文章投稿，经审批进入精选</string>
+
+    <string name="med_tv_setting">设置</string>
+    <string name="med_tv_newpush_setting">消息推送</string>
+    <string name="med_tv_aboutus_setting">关于我们</string>
+    <string name="med_tv_delcache_setting">清除缓存</string>
+    <string name="med_tv_test_setting">给APP评分</string>
+    <string name="med_tv_shareto_setting">分享小象户外给朋友</string>
+
+    //login
+    <string name="account_edt_hint">请输入手机号/邮箱/用户名</string>
+    <string name="password_edt_hint">请输入密码</string>
+    <string name="signup_tv">注册</string>
+    <string name="signin_tv">登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="btn_findbyphone">手机找回</string>
+    <string name="btn_findbyemail">邮箱找回</string>
+    <string name="tv_moresignin">更多登录方式</string>
+    <string name="tv_notsignin">随便看看</string>
+    <string name="tv_signup_beflog">立即登录</string>
+
+    //register
+    <string name="phone_edt_hint">请输入您的手机号</string>
+    <string name="veri_edt_hint">6~20位字母或数字</string>
+    <string name="tv_regibyemail">使用邮箱注册</string>
+    <string name="tv_nextstep">下一步</string>
+    <string name="edt_name">想让别人叫你什么</string>
+    <string name="edt_inputemail_hint">请输入您的邮箱号</string>
+    <string name="edt_inputname_hint">请输入您的昵称</string>
+    <string name="btn_regibyphone">手机注册</string>
+    <string name="tv_hadEmailRegi">注册完成</string>
+    <string name="tv_hadModifyEmail">修改完成</string>
+    <string name="tv_remforEmail">激活链接已发送到您的注册邮箱中，请在48小时内激活账户</string>
+    <string name="tv_remforMEmail">激活链接已发送到您修改的邮箱中，请在48小时内激活账户</string>
+    <string name="btn_getit_everi">知道啦</string>
+
+
+    //phone verification
+    <string name="edt_inputVeri_pregi">请输入验证码</string>
+    <string name="tv_getverinums">获取验证码</string>
+    <string name="tv_hadaccount">已有账号？立刻登录</string>
+    <string name="tv_inputnewpw">输入新密码</string>
+    <string name="tv_surenewpw">确认密码</string>
+    <string name="tv_resetpwbye">您的申请已提交，请登录邮箱重置密码</string>
+    <string name="btn_complete">完成</string>
+    <string name="edt_inputemail">请输入您的注册邮箱</string>
+
+    //info set
+    <string name="tv_normset">常规设置</string>
+    <string name="tv_changehead">更换头像</string>
+    <string name="tv_name">昵称</string>
+    <string name="tv_sex">性别</string>
+    <string name="tv_address">居住地</string>
+    <string name="tv_certi">户外证书</string>
+    <string name="tv_exper">户外经历</string>
+    <string name="tv_bindaccount">账号绑定</string>
+    <string name="tv_bindemail">绑定邮箱</string>
+    <string name="tv_bindphone">绑定手机号</string>
+
+    //我的动态之类的东西
+    <string name="tv_addobserve_fans">关注</string>
+    <string name="tv_exitobserve_fans">取消关注</string>
+    <string name="tv_info_ouremail">官方邮箱：pr@ioutside.com</string>
+    <string name="tv_info_wechat">微信公众号：ioutside2016</string>
+
+    <string name="tv_remend_noNetwork">网络有问题！请检查网络并重新加载</string>
+    <string name="tv_nomysub">点我关注更多专题</string>
+    <string name="tv_addmore_mysub">添加更多专题</string>
+
+    //my news
+    <string name="tv_mynews">我的消息</string>
+    <string name="tv_liked">被赞</string>
+    <string name="tv_commend">被评论</string>
+    <string name="tv_officemsg">官方消息</string>
+
+    <!--discovery -->
+    <string name="discovery_focus">关注</string>
+    <string name="discovery_recommend">推荐</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_dynamic">DynamicActivity</string>
+
+    <!--new -->
+    <string name="tv_level">LV %s</string>
+    <string name="tv_re_get_sms_code">重新获取(%ss)</string>
+    <string name="tv_credit">%1$s/%2$s</string>
+    <string name="tv_followed">关注：%s</string>
+    <string name="tv_essay">文章：%s</string>
+    <string name="version_name">version_name:</string>
+    <string name="can_not_find_version_name">can not find version name</string>
+    <string name="tv_child_subjects_num">(%s)</string>
+    <string name="visitor_num">%s位游客</string>
+    <string name="start_date">出发日期:%s</string>
+    <string name="price">¥%s</string>
+    <!--new -->
+
+</resources>

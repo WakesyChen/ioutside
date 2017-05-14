@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/comment_dialog_relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+        <ImageView
+            android:id="@+id/comment_dialog_back"
+            android:src="@drawable/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/med_tv_scorenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对话列表"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@id/comment_dialog_relativeLayout1"
+        android:background="@color/med_info_lay_user"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/comment_dialog_relativeLayout1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

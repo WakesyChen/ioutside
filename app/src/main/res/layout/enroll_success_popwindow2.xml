@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:gravity="center"
+  >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp">
+
+            <ImageView
+                android:id="@+id/order_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/salon_order_top" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="填写报名信息"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <!--订单内容部分-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#eee"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/order_success"/>
+        <TextView
+            android:textColor="#f7a844"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="恭喜你，报名成功啦！"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/order_2qrc"/>
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"
+                    android:textSize="11sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/order_success_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--底部布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/salon_order_bottom"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textSize="11sp"
+                android:textColor="#333333"
+                android:layout_marginTop="15dp"
+                android:text="友情提示：建议同时截图，保留此页，作为留存"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/order_finish"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="好的，我已截图留存"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/salon_order_etbg"/>
+    </LinearLayout>
+</RelativeLayout>
+
+

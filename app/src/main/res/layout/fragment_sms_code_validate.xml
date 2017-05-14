@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="40dp"
+    tools:background="@drawable/bg_login_v2">
+
+    <LinearLayout
+        android:layout_width="@dimen/edit_layout_width"
+        android:layout_height="wrap_content"
+        android:background="@color/input_box_bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="@dimen/edit_layout_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="手机号"
+                android:textAppearance="@style/NormalText.Light" />
+
+            <TextView
+                android:id="@+id/tv_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textAppearance="@style/NormalText.Light"
+                tools:text="15118492943" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_layout_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="验证码"
+                android:textAppearance="@style/NormalText.Light" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请输入验证码"
+                android:singleLine="true"
+                android:textColor="@color/input_text"
+                android:textColorHint="@color/input_text_hint"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_get_sms_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="false"
+                android:textAppearance="@style/LittleText.Light"
+                tools:text="重新获取(59s)" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册即代表您已阅读并同意"
+            android:textAppearance="@style/LittleText" />
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:text="爱户外协议"
+            android:textAppearance="@style/AccentText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:text="完成"
+        android:layout_marginTop="30dp"
+        android:textAppearance="@style/NormalText"
+        android:background="@drawable/bg_btn_states_v2"
+        android:layout_width="@dimen/edit_layout_width"
+        android:layout_height="@dimen/btn_height" />
+
+</LinearLayout>

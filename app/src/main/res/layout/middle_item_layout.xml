@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192.5dp">
+
+    <ImageView
+        android:id="@+id/middle_image"
+        android:src="@drawable/item15"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+    <TextView
+        android:id="@+id/middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="山里的那些事————登山的一些组注意事项"
+        android:layout_below="@id/middle_image"
+        android:textColor="@color/middle_text"
+        android:textSize="14sp"
+         />
+    <RelativeLayout
+        android:id="@+id/middle_function"
+        android:layout_below="@id/middle_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_share"
+            android:src="@drawable/middle_item_share"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="23.3dp"
+            android:layout_height="23.3dp" />
+        <ImageView
+            android:id="@+id/middle_function_comment"
+            android:src="@drawable/middle_item_comment"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/img_share"
+            android:layout_marginRight="26.6dp"
+            android:layout_width="23.3dp"
+            android:layout_height="23.3dp" />
+        <ImageView
+            android:id="@+id/middle_function_liked"
+            android:layout_toLeftOf="@id/middle_function_comment"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="26.6dp"
+            android:src="@drawable/middle_item_zan"
+            android:layout_width="23.3dp"
+            android:layout_height="23.3dp" />
+        <TextView
+            android:id="@+id/middle_likedcount"
+            android:textSize="8sp"
+            android:text="20"
+            android:layout_alignTop="@id/middle_function_liked"
+            android:layout_alignRight="@id/middle_function_liked"
+            android:textColor="@color/likedCount_commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/middle_commentCount"
+            android:textSize="8sp"
+            android:text="30"
+            android:layout_alignTop="@id/middle_function_comment"
+            android:layout_alignRight="@id/middle_function_comment"
+            android:textColor="@color/likedCount_commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

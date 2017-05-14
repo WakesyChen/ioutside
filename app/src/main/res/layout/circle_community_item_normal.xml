@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/community_item"
+    android:background="@color/background_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/community_item_img"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/community_item_title"
+        android:layout_toRightOf="@+id/community_item_img"
+        android:layout_alignTop="@+id/community_item_img"
+        android:textSize="14sp"
+        android:text="越野跑"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/community_item_noteNum"
+        android:layout_alignLeft="@+id/community_item_title"
+        android:layout_toRightOf="@+id/community_item_img"
+        android:layout_alignBottom="@+id/community_item_img"
+        android:text="132564帖"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:background="@drawable/activity_enter"
+        android:layout_width="12dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaoxiang.ioutside.mine.activity.AboutUsActivity">
+
+    <include layout="@layout/include_title"
+        android:id="@+id/lay_title_aboutus"/>
+    
+    <com.xiaoxiang.ioutside.common.CircleImageView
+        android:id="@+id/cirimg_head_aboutus"
+        android:layout_below="@id/lay_title_aboutus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83.3dp"
+        android:src="@drawable/head_ele"
+        android:layout_width="133.3dp"
+        android:layout_height="133.3dp" />
+
+    <TextView
+        android:id="@+id/tv_outdoor_aboutus"
+        android:text="爱户外V1.4.3"
+        android:layout_below="@id/cirimg_head_aboutus"
+        android:layout_marginTop="13.3dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16.6sp"
+        android:textColor="#666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_scoreus_aboutus"
+        android:layout_below="@id/tv_outdoor_aboutus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="去评分"
+        android:textColor="@color/background_white"
+        android:textSize="13.3sp"
+        android:background="@drawable/scoreus_btn_drawable"
+        android:layout_width="133.3dp"
+        android:layout_height="28dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/lay_info_us"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/nouse_line_us"
+            android:background="#b0b0b0"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp" />
+
+        <TextView
+            android:id="@+id/tv_ouremail_us"
+            android:layout_below="@id/nouse_line_us"
+            android:text="@string/tv_info_ouremail"
+            android:textSize="11.3sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#b0b0b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_wechat_us"
+            android:layout_below="@id/tv_ouremail_us"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18.3dp"
+            android:text="@string/tv_info_wechat"
+            android:layout_centerHorizontal="true"
+            android:textSize="11.3sp"
+            android:textColor="#b0b0b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

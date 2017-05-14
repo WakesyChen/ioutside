@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/common_back"
+            android:src="@drawable/back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"/>
+
+
+
+        <TextView
+            android:id="@+id/common_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单提交"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"/>
+        <ImageView
+            android:id="@+id/order_phone"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/order_phone"/>
+
+
+    </RelativeLayout>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#eee"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_marginTop="8dp"
+    android:gravity="center_vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/order_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="16sp"
+        android:text="尼泊尔ABC大环线徒步"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:background="@drawable/activity_num"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:text="名额剩余20人"
+            android:id="@+id/activity_remainNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/activity_position"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:text="从塘朗山出发"
+            android:id="@+id/activity_startPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
+    <!--活动规格-->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="20dp"
+                android:background="@drawable/activity_vertical_sign"/>
+            <TextView
+                android:textColor="#444"
+
+                android:layout_marginLeft="10dp"
+                android:text="活动规格"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/activity_time"/>
+            <TextView
+                android:padding="4dp"
+                android:id="@+id/order_activityType"
+                android:gravity="center"
+                android:background="@drawable/activity_tvbg2"
+                android:layout_marginLeft="10dp"
+                android:text="7月13日 1:1无装备"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"/>
+    <!--出行人信息-->
+    <LinearLayout
+        android:id="@+id/order_personList"
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="20dp"
+                android:background="@drawable/activity_vertical_sign"/>
+            <TextView
+                android:textColor="#444"
+
+                android:layout_marginLeft="10dp"
+                android:text="出行人信息"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/med_num_text_user"
+                android:text="长按删除"/>
+            <ImageView
+                android:layout_marginRight="12dp"
+                android:layout_width="12dp"
+                android:layout_height="18dp"
+                android:background="@drawable/activity_enter"/>
+        </LinearLayout>
+
+       <ListView
+           android:id="@+id/order_listviewPerson"
+           android:layout_marginTop="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </ListView>
+        <!--添加一名行人-->
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/order_addPerson"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/activity_addcontact"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:text="添加一名出行人"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--联系人信息-->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="20dp"
+                android:background="@drawable/activity_vertical_sign"/>
+            <TextView
+                android:textColor="#444"
+
+                android:layout_marginLeft="10dp"
+                android:text="联系人信息"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"/>
+            <EditText
+                android:id="@+id/order_contactName"
+                android:drawableLeft="@drawable/edit_star"
+                android:background="@null"
+                android:hint="请输入真实姓名"
+                android:textColorHint="#999"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机"/>
+            <EditText
+                android:id="@+id/order_contactPhone"
+
+                android:drawableLeft="@drawable/edit_star"
+                android:background="@null"
+                android:textColorHint="#999"
+                android:textSize="16sp"
+                android:hint="请输入真实的手机号"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--备注-->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="20dp"
+                android:background="@drawable/activity_vertical_sign"/>
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:text="备注"
+                android:textColor="#444"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"
+            android:layout_marginLeft="18dp"/>
+
+        <EditText
+            android:id="@+id/order_extraInfo"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/edit_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <CheckBox
+            android:id="@+id/order_agreeRules"
+            android:textColor="#333"
+            android:layout_marginLeft="20dp"
+            android:background="#fff"
+            android:checked="true"
+            android:buttonTint="#fb9b20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="同意《爱户外服务协议》"/>
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+    <!--提交订单-->
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="订单价格："/>
+        <TextView
+            android:id="@+id/order_priceAll"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥7777"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/order_post"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="提交订单"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@drawable/actangle_orange_bg"/>
+
+
+    </LinearLayout>
+</LinearLayout>

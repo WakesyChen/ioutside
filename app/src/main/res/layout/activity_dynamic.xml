@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+   <RelativeLayout
+       android:id="@+id/dynamic_relativeLayout"
+       android:layout_width="match_parent"
+       android:layout_height="38dp"
+       android:orientation="horizontal">
+       <ImageView
+           android:id="@+id/dynamic_back"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:src="@drawable/back"
+           android:layout_alignTop="@+id/textView"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginLeft="11dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="动态编辑"
+           android:layout_gravity="center"
+           android:textSize="20dp"
+           android:id="@+id/textView"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true" />
+       <ImageView
+           android:id="@+id/dynamic_publish"
+           android:layout_width="53dp"
+           android:layout_height="24dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:src="@drawable/publish_button"
+           android:layout_marginRight="11dp"/>
+   </RelativeLayout>
+
+    <EditText
+        android:id="@+id/dynamic_thoughts"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/dynamic_relativeLayout"
+        android:background="@drawable/publish_thoughts"
+        android:hint="说些什么吧..."
+        android:gravity="start"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="9dp"
+        android:textColor="#888888"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp" />
+
+    <RelativeLayout
+        android:id="@+id/dynamic_relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/dynamic_thoughts"
+        android:background="@drawable/publish_tag">
+
+        <TextView
+            android:id="@+id/dynamic_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/dynamic_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/tag_background"
+            android:layout_toRightOf="@id/dynamic_textView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="1"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/dynamic_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/tag_background"
+            android:layout_toRightOf="@id/dynamic_tag1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="2"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/dynamic_tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/tag_background"
+            android:layout_toRightOf="@id/dynamic_tag2"
+           android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="3"/>
+
+        <ImageView
+            android:id="@+id/dynamic_add_tag"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/publish_add_tag"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dynamic_tag3"
+            android:layout_marginLeft="8dp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dynamic_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_below="@id/dynamic_relativeLayout2"
+        android:background="@drawable/dynamic_photo">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_below="@id/dynamic_recyclerView">
+       <TextView
+           android:id="@+id/dynamic_synchronize"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="同步到"
+           android:textSize="12sp"
+           android:textColor="#454545"
+           android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/dynamic_qq"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/dynamic_qq"
+            android:layout_toRightOf="@id/dynamic_synchronize"/>
+        <ImageView
+            android:id="@+id/dynamic_weixin"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/dynamic_qq"
+            android:src="@drawable/dynamic_weixin"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/dynamic_weibo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/dynamic_weixin"
+            android:src="@drawable/dynamic_weibo"/>
+    </RelativeLayout>
+
+</RelativeLayout>

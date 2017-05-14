@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/discovery_top"
+        layout="@layout/dynamic_top"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/discovery_viewPager"
+        android:layout_below="@id/discovery_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_below="@id/discovery_top"
+        android:src="@drawable/shadow_top"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <ImageView
+        android:id="@+id/discovery_photo"
+        android:src="@drawable/discovery_dynamic"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

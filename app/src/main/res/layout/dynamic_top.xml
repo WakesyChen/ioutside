@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#ffffff">
+
+<ImageView
+    android:id="@+id/discovery_add_friend"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:src="@drawable/add_friend"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="11dp"/>
+
+    <RelativeLayout
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <!--
+        <TextView
+            android:id="@+id/discovery_top_recommend"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@drawable/bottom_layout_text"
+            android:text="推荐"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/discovery_top_focus"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@drawable/bottom_layout_text"
+            android:text="关注"
+            android:gravity="center"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_alignParentRight="true"/>
+            -->
+        <!--<TextView-->
+            <!--android:id="@+id/discovery_top_recommend"-->
+            <!--android:layout_width="67dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@drawable/bottom_layout_text"-->
+            <!--android:text="推荐"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/discovery_top_focus"-->
+            <!--android:layout_width="67dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@drawable/bottom_layout_text"-->
+            <!--android:text="关注"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="33dp"-->
+            <!--android:layout_marginStart="33dp"-->
+            <!--android:layout_alignParentRight="true"/>-->
+
+        <android.support.design.widget.TabLayout
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorAccent"
+            android:id="@+id/discovery_top_titles"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

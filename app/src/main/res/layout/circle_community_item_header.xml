@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+    <com.xiaoxiang.ioutside.mine.widget.BannerLayout
+        android:id="@+id/community_bannerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        app:autoPlayDuration="4000"
+        app:defaultImage="@null"
+        app:scrollDuration="900"
+        tools:background="#008800" />
+
+
+    <com.xiaoxiang.ioutside.mine.widget.IndicatorLayout
+        android:id="@+id/community_indicatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/community_bannerlayout"
+        android:background="#fff"
+        app:indicatorShape="oval"
+        app:indicatorSpace="6dp"
+        app:selectedIndicatorColor="@color/colorAccent"
+        app:selectedIndicatorHeight="4dp"
+        app:selectedIndicatorWidth="4dp"
+        app:unSelectedIndicatorColor="#aaaaaa"
+        app:unSelectedIndicatorHeight="4dp"
+        app:unSelectedIndicatorWidth="4dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/four_group_ll"
+        android:background="@color/background_white"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="horizontal">
+
+       <FrameLayout
+           android:id="@+id/community_part1"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="80dp"
+           >
+           <ImageView
+               android:layout_gravity="center"
+               android:background="@drawable/circle_mix"
+               android:layout_width="80dp"
+               android:layout_height="80dp" />
+           <LinearLayout
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:text="综合"
+                   android:textColor="@color/background_white"
+                   android:textSize="14sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:layout_marginTop="5dp"
+                   android:text="806人"
+                   android:visibility="gone"
+                   android:textColor="@color/background_white"
+                   android:textSize="12sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+
+       </FrameLayout>
+        <FrameLayout
+            android:id="@+id/community_part2"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/circle_land"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="陆上小组"
+                    android:textColor="@color/background_white"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="806人"
+                    android:visibility="gone"
+
+                    android:textColor="@color/background_white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/community_part3"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/circle_water"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="水上小组"
+                    android:textColor="@color/background_white"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="806人"
+                    android:visibility="gone"
+
+                    android:textColor="@color/background_white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/community_part4"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/circle_mix"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="用户小组"
+                    android:textColor="@color/background_white"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="806人"
+                    android:visibility="gone"
+
+                    android:textColor="@color/background_white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/community_mine"
+        android:background="@color/background_white"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:text="我的社区"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/add_count"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:background="@color/background_white"
+        android:id="@+id/community_notify_loginOrAdd"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="哦哦，好像还没登录哦，请先登录~"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

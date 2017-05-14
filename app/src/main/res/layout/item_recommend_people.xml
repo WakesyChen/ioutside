@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:id="@+id/layout_user"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:id="@+id/lay_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.xiaoxiang.ioutside.common.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tool:src="@drawable/src_swim" />
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/iv_avatar"
+            android:layout_alignRight="@id/iv_avatar"
+            android:background="@drawable/bg_round_white"
+            android:src="@drawable/ic_check_circle_black_12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lay_avatar"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textSize="10sp"
+        tool:text="ioutside爱户外" />
+
+</RelativeLayout>

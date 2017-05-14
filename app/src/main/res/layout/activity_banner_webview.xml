@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/background_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/banner_detail_back"
+            android:src="@drawable/back"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="11dp"/>
+
+
+
+        <TextView
+            android:id="@+id/webview_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="活动详情"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/activity_banner_share"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/share"/>
+
+
+    </LinearLayout>
+
+    <com.xiaoxiang.ioutside.common.ProgressWebView
+        android:id="@+id/banner_webview"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </com.xiaoxiang.ioutside.common.ProgressWebView>
+    <Button
+        android:id="@+id/enroll_btn"
+        android:text="立即报名"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        />
+</LinearLayout>

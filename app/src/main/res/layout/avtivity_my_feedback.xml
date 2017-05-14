@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/lay_title"
+        layout="@layout/include_title" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_title"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="6.6dp"
+        android:layout_marginLeft="17dp"
+        android:text="您有什么想对我们说的吗"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:src="@color/item_divider"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_hint"
+        android:id="@+id/iv_divider"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="1dp" />
+
+    <EditText
+        android:id="@+id/edt_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="点击输入"
+        android:background="@null"
+        android:layout_below="@+id/iv_divider"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_above="@+id/btn_feedback_submit"
+        android:textColor="@color/feedback_input"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_feedback_submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_btn_states_v2"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="提交"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/feedback_submit_color"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

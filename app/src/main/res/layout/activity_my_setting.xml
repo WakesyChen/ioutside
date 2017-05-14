@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mine.activity.MySettingActivity">
+
+    <include layout="@layout/include_title"
+        android:id="@+id/lay_title_setting"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/lay_aboutus_setting"
+        android:background="@android:color/white"
+        android:layout_below="@id/lay_title_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="@string/med_tv_aboutus_setting"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13.3dp"
+            android:textSize="14sp"
+            android:textColor="@color/med_tv_scoreinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mine_arrow"
+            android:layout_width="10dp"
+            android:layout_height="18.6dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/nouse_bg_div"
+        android:layout_below="@id/lay_aboutus_setting"
+        android:background="@color/med_info_lay_user"
+        android:layout_width="match_parent"
+        android:layout_height="6.6dp"/>
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:id="@+id/lay_clearcache_setting"
+        android:layout_below="@id/nouse_bg_div"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="@string/med_tv_delcache_setting"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="@color/med_tv_scoreinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/lay_clearcache"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:background="@drawable/befclearcache_drawble"
+            android:layout_height="15dp" >
+
+            <TextView
+                android:id="@+id/tv_cache_setting"
+                android:layout_marginLeft="6.6dp"
+                android:textSize="10sp"
+                android:textColor="@color/med_tv_clecache_num"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/img_clearcache"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0.5dp"
+                android:src="@drawable/img_clear"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@id/lay_clearcache_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/med_info_lay_user"/>
+
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/btn_signout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="250dp"
+        android:layout_marginBottom="33.3dp"
+        android:layout_centerHorizontal="true"
+        android:text="退出登录"
+        android:textSize="14sp"
+        android:textColor="@color/tv_sign_out"
+        android:layout_height="44dp" />
+
+</RelativeLayout>

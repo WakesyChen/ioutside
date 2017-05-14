@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".mine.activity.MyScoreActivity">
+
+    <RelativeLayout
+        android:background="@drawable/bg_profile"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <ImageView
+            android:id="@+id/img_backbtn_score"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13.3dp"
+            android:src="@drawable/ic_back"
+            android:layout_width="23.6dp"
+            android:layout_height="23.6dp"/>
+
+
+        <com.xiaoxiang.ioutside.common.CircleImageView
+            android:layout_below="@id/img_backbtn_score"
+            android:id="@+id/img_userhead_score"
+            android:layout_width="93.3dp"
+            android:layout_height="93.3dp"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/lay_curscore_score"
+            android:layout_below="@id/img_userhead_score"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nouse_tv_curscore"
+                android:text="@string/top_textview_curscore_user"
+                android:textSize="12sp"
+                android:textColor="#eeeeee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_currscore_score"
+                android:layout_marginLeft="6.6dp"
+                android:textStyle="bold"
+                android:textColor="@color/top_tv_white"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_allscore_score"
+            android:layout_below="@id/lay_curscore_score"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nouse_tv_allscore"
+                android:text="@string/top_textview_allscore_user"
+                android:textSize="12sp"
+                android:textColor="#eeeeee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_allscore_score"
+                android:layout_marginLeft="6.6dp"
+                android:textStyle="bold"
+                android:textColor="@color/top_tv_white"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_level_score"
+            android:layout_below="@id/lay_allscore_score"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nouse_tv_level"
+                android:text="@string/top_tv_level_user"
+                android:textSize="12sp"
+                android:textColor="#eeeeee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_level_score"
+                android:layout_marginLeft="6.6dp"
+                android:textStyle="bold"
+                android:textColor="@color/top_tv_white"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@id/lay_level_score"
+            android:text="@string/top_tv_con_user"
+            android:textColor="#EEEEEE"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6.6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:background="@color/med_info_lay_user"
+                android:layout_width="match_parent"
+                android:layout_height="33.3dp">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/med_tv_getscore"
+                    android:text="@string/med_tv_getscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_login"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/med_div_setting_user"
+                />
+
+
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_cominfo"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_cominfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/med_div_setting_user"
+                />
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_shareAPP"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_shareAPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/med_div_setting_user"
+                />
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_likeandcom"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_likeandcom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/med_div_setting_user"
+                />
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_liked"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_liked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/med_div_setting_user"
+                />
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_share"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:background="@color/med_info_lay_user"
+                android:layout_width="match_parent"
+                android:layout_height="33.3dp">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/med_tv_getscore"
+                    android:text="@string/med_tv_othaward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_selecttofound"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_selectedtofound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/med_div_setting_user"
+                />
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_remtowellchosenm"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_recomtowellchosen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/med_div_setting_user"
+                />
+
+
+            <RelativeLayout
+                android:background="@color/background_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/nouse_tv_writetowellchosen"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13.3dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scoreinfo"
+                    android:text="@string/med_tv_writetowellchosen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="+10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16.6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/med_tv_scorenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/med_div_setting_user"
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

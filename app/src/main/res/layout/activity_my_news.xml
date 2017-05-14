@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mine.activity.MyNewsActivity">
+
+    <include layout="@layout/include_title"
+        android:id="@+id/title_mynews"
+        android:layout_width="match_parent"
+        android:layout_height="48.6dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lay_liked_news"
+        android:background="@drawable/lay_bg_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="46.6dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/liked"
+            android:layout_gravity="center_vertical"
+            android:layout_width="33.3dp"
+            android:layout_height="33.3dp" />
+
+        <TextView
+            android:text="@string/tv_liked"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:background="@color/div_mynews"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp" />
+
+    <LinearLayout
+        android:id="@+id/lay_commend_news"
+        android:layout_width="match_parent"
+        android:background="@drawable/lay_bg_item"
+        android:orientation="horizontal"
+        android:layout_height="46.6dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/message"
+            android:layout_gravity="center_vertical"
+            android:layout_width="33.3dp"
+            android:layout_height="33.3dp" />
+
+        <TextView
+            android:text="@string/tv_commend"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:background="@color/div_mynews"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp" />
+
+    <LinearLayout
+        android:id="@+id/lay_officemsg_news"
+        android:layout_width="match_parent"
+        android:background="@drawable/lay_bg_item"
+        android:orientation="horizontal"
+        android:layout_height="46.6dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/officemsg"
+            android:layout_gravity="center_vertical"
+            android:layout_width="33.3dp"
+            android:layout_height="33.3dp" />
+
+        <TextView
+            android:text="@string/tv_officemsg"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:background="@color/feedback_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

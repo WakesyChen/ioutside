@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_subject"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:scaleType="center"
+        tools:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/lay_sub_description"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/rl_right_drawable_container"
+        android:layout_toRightOf="@+id/iv_photo">
+
+        <TextView
+            android:id="@+id/tv_title_mysub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1b1b1b"
+            android:textSize="15sp"
+            tools:text="人文地理" />
+
+        <TextView
+            android:id="@+id/tv_intro_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#cc1b1b1b"
+            android:textSize="12sp"
+            tools:ext="自救急救，生存技能， 其他" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_right_drawable_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/iv_subscribe"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:src="@drawable/src_state_subscribe_2"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_enter"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/ic_enter" />
+
+    <ImageView
+        android:id="@+id/iv_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:src="@color/item_divider" />
+
+
+</RelativeLayout>

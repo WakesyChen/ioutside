@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/log_in_background"
+    android:layout_height="match_parent"
+    tools:context="com.xiaoxiang.ioutside.mine.activity.ModifyEmailActivity">
+
+    <include
+        layout="@layout/include_title"
+        android:id="@+id/title_setnewphone"/>
+
+
+    <EditText
+        android:id="@+id/edt_newphone"
+        android:layout_below="@id/title_setnewphone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="@string/phone_edt_hint"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_sure_phone"
+        android:layout_below="@id/edt_newphone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/tv_secondtop"
+        android:text="确定"
+        android:textSize="20sp"
+        android:textColor="@color/background_white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

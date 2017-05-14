@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/attention_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f2f2f2">
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:id="@+id/attention_relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attention_relativeLayout">
+        <ImageView
+            android:id="@+id/attention_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/account_bitmap"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="11dp"/>
+        <TextView
+            android:id="@+id/attention_title"
+            android:textColor="#454545"
+            android:textSize="16sp"
+            android:text="标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="11dp"
+            android:layout_toRightOf="@id/attention_image" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/attention_image"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@id/attention_title">
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:id="@+id/attention_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#454545"
+                android:textSize="14sp"
+                android:text="专题"
+                android:background="@drawable/bg_substribe_tag"/>
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:gravity="center"
+                android:id="@+id/attention_subject2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/attention_subject"
+                android:layout_alignBottom="@+id/attention_subject"
+                android:layout_marginLeft="10dp"
+                android:textColor="#454545"
+                android:textSize="14sp"
+                android:text="爱户外专栏"
+                android:background="@drawable/bg_substribe_tag"/>
+
+            <TextView
+                android:id="@+id/attention_viewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:text="123"
+                android:textSize="10sp"
+                android:textColor="#666666"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@+id/attention_viewCount"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/subscribe_viewcount"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

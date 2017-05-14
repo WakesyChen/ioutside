@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <com.xiaoxiang.ioutside.mine.widget.BannerLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                app:autoPlayDuration="3000"
+                app:defaultImage="@null"
+                app:scrollDuration="900"
+                tools:background="#ff0000" />
+
+            <TextView
+                android:id="@+id/tv_banner_title"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_alignBottom="@id/banner"
+                android:background="#4a000000"
+                android:gravity="center"
+                android:textColor="#bbbbbb"
+                android:textSize="15sp"
+                tools:text="登山技巧" />
+
+            <com.xiaoxiang.ioutside.mine.widget.IndicatorLayout
+                android:id="@+id/indicator_layout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/banner"
+                app:indicatorShape="oval"
+                app:indicatorSpace="6dp"
+                app:selectedIndicatorColor="@color/colorAccent"
+                app:selectedIndicatorHeight="4dp"
+                app:selectedIndicatorWidth="4dp"
+                app:unSelectedIndicatorColor="#aaaaaa"
+                app:unSelectedIndicatorHeight="4dp"
+                app:unSelectedIndicatorWidth="4dp" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/banner_container"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_subject_category"
+            android:layout_width="match_parent"
+            android:layout_height="63dp" />
+
+        <TextView
+            android:id="@+id/tv_my_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="我订阅的专题" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:src="@color/item_divider" />
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            android:textColor="#666666"
+            android:text="还没有订阅？快去上面的专题系列看看"
+            android:id="@+id/tv_hint"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_my_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

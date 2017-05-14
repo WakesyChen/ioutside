@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_myfans_item"
+    android:layout_width="match_parent"
+    android:layout_height="83.3dp"
+    android:background="@android:color/white">
+
+    <com.xiaoxiang.ioutside.common.CircleImageView
+        android:id="@+id/cirimg_head_fans"
+        android:src="@drawable/defhead"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="13.3dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/tv_name_fans"
+        android:text="十点半的地铁"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="13.3dp"
+        android:layout_toRightOf="@id/cirimg_head_fans"
+        android:textSize="16sp"
+        android:textColor="@color/tv_name_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_sex_fans"
+        android:textSize="10.6sp"
+        android:text="男"
+        android:layout_below="@id/tv_name_fans"
+        android:layout_toRightOf="@id/cirimg_head_fans"
+        android:layout_marginLeft="16.6sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/tv_info_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_addr_fans"
+        android:layout_toRightOf="@id/tv_sex_fans"
+        android:layout_below="@id/tv_name_fans"
+        android:text="武汉"
+        android:textSize="10.6sp"
+        android:textColor="@color/tv_info_fans"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16.6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_level_fans"
+        android:layout_toRightOf="@id/tv_addr_fans"
+        android:layout_below="@id/tv_name_fans"
+        tools:text="LV3"
+        android:textSize="10.6sp"
+        android:textColor="@color/tv_info_fans"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16.6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/lay_observe"
+        android:background="@drawable/fans_add"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="46.6dp"
+        android:layout_height="18.6dp">
+
+        <TextView
+            android:id="@+id/tv_addobserve_fans"
+            android:text="@string/tv_addobserve_fans"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:textColor="@color/background_white"
+            android:layout_marginRight="3.3dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+
+        android:background="@color/item_divider"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp" />
+    
+    
+    
+</RelativeLayout>

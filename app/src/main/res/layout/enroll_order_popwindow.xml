@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp">
+
+            <ImageView
+                android:id="@+id/order_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/salon_order_top" />
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/salon_order_cancel"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="填写报名信息"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <!--订单内容部分-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#eee"
+            android:orientation="vertical">
+            <!--姓名-->
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/salon_order_etbg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="姓名："
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/order_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="输入姓名"
+                    android:textColorHint="#881b1b1b"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <!--电话-->
+            <!--姓名-->
+            <LinearLayout
+                android:layout_width="242dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/salon_order_etbg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="电话："
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/order_phone"
+                    android:inputType="number"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="用以接收验证信息"
+                    android:textColorHint="#881b1b1b"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!--选择票类型-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:id="@+id/price_choices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="26dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/order_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="星期六（2016-9-10）"/>
+
+                    <RadioButton
+                        android:id="@+id/order_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="星期天（2016-9-11）" />
+
+                    <RadioButton
+
+                        android:visibility="gone"
+                        android:id="@+id/order_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="支持票 0元" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--底部布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:background="@drawable/salon_order_bottom"
+
+            android:layout_height="40dp">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_notice"
+                android:layout_marginLeft="20dp"
+                android:textSize="10sp"
+                android:layout_marginTop="15dp"
+                android:text="友情提示：报名后请继续关注爱户外"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_rmb"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/tv_notice"
+                android:layout_toLeftOf="@+id/price_amount"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:text="RMB"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/price_amount"
+                android:layout_alignBottom="@+id/tv_rmb"
+                android:text="0.0元"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/order_topay"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="确定报名"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/salon_order_etbg"/>
+    </LinearLayout>
+</LinearLayout>
+
+

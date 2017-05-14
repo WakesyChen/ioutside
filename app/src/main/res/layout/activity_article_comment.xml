@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/article_comment_relativeLayout">
+
+    <RelativeLayout
+        android:id="@+id/article_comment_relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+        <ImageView
+            android:id="@+id/article_comment_back"
+            android:src="@drawable/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/med_tv_scorenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论列表"/>
+        <ImageView
+            android:id="@+id/article_comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/article_comment"
+            android:layout_marginRight="11dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@id/article_comment_relativeLayout1"
+        android:background="@color/med_info_lay_user"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/article_comment_relativeLayout1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/top_two_background"
+    android:layout_width="match_parent"
+    android:layout_height="48.67dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:id="@+id/top_one_line"
+        android:layout_width="0.67dp"
+        android:layout_height="26.67dp"
+        android:src="@color/tv_secondtop"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/top_one_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="33.3dp"
+        android:layout_toLeftOf="@id/top_one_line"
+        android:textSize="19.3sp"
+        android:textColor="@color/tv_secondtop"
+        android:text="文章"/>
+
+
+
+    <TextView
+        android:id="@+id/top_one_topic"
+        android:layout_toRightOf="@id/top_one_line"
+        android:layout_marginLeft="33.3dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19.3sp"
+        android:textColor="@color/tv_secondtop2"
+        android:text="发现"/>
+
+</RelativeLayout>

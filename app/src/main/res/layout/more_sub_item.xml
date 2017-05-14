@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_moresub_item"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="66.6dp">
+
+    <com.xiaoxiang.ioutside.mine.widget.RoundImageView
+        android:id="@+id/img_photo_sub"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:layout_toLeftOf="@+id/iv_enter"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/img_photo_sub"
+        android:layout_marginLeft="6.6dp"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_title_sub"
+            android:textSize="15sp"
+            tools:text="fdfdsfdsfdsfd"
+
+            android:textColor="@color/tv_title_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_intro_sub"
+            android:layout_below="@id/tv_title_sub"
+            android:layout_marginTop="13.3dp"
+            tools:text="dfdsfdsfdsf"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:textColor="@color/tv_content_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_observe_sub"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@drawable/observe_sub"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="@string/med_type_observer_user"-->
+        <!--android:textColor="@color/background_white"-->
+        <!--android:textSize="13.3sp"-->
+        <!--android:layout_width="56dp"-->
+        <!--android:layout_height="22dp" />-->
+    
+    <ImageView
+        android:id="@+id/iv_enter"
+        android:src="@drawable/ic_enter"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <ImageView
+        android:background="@color/item_divider"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp" />
+
+
+
+</RelativeLayout>

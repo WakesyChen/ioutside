@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaoxiang.ioutside.mine.activity.MyFansActivity">
+
+    <include layout="@layout/include_title"
+        android:id="@+id/lay_title_fans"/>
+
+    <TextView
+        android:id="@+id/tv_remend_myfans"
+        android:layout_below="@id/lay_title_fans"
+        android:text="@string/tv_remend_noNetwork"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:background="@android:color/white"
+        android:id="@+id/swrf_myfans"
+        android:layout_below="@id/tv_remend_myfans"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recv_myfans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fb9b20</color>
+    <color name="colorPrimaryDark">#fb9b20</color>
+    <color name="colorAccent">#fb9b20</color>
+    <color name="bottom_text_pressed">#fb9b20</color>
+    <color name="bottom_text_normal">#333333</color>
+    <color name="bottom_background_pressed">#f19108</color>
+    <color name="bottom_background_normal">#e4e4e4</color>
+    <color name="background_white">#ffffff</color>
+    <color name="top_one_background">#f19108</color>
+    <color name="top_one_text_pressed">#ffffff</color>
+    <color name="top_one_text_normal">#f8cda5</color>
+    <color name="top_two_text_pressed">#f19108</color>
+    <color name="top_two_text_normal">#666666</color>
+
+    <color name="dialog_login_bg">#7f000000</color>
+
+    <color name="uvv_green">#ff50b100</color>
+    <color name="middle_text">#373737</color>
+    <color name="likedCount_commentCount">#7c7c7c</color>
+    <color name="top_two_background">#fbfbfb</color>
+    <color name="midlle3_item_title">#666666</color>
+    <color name="midlle3_item_title_highlight">#f19108</color>
+    <color name="middle3_item_text2">#777777</color>
+
+    //detail_article
+    <color name="article_detail_text">#767676</color>
+    <color name="article_detail_text_bg">#f2f2f2</color>
+    <color name="article_detail_text_top">#ffffff</color>
+    <color name="article_detail_text_line3">#fff0db</color>
+
+    <color name="top_tv_white">#ffffff</color>
+    <color name="comment_like">#7c7c7c</color>
+
+    /-----------------------
+    <!--color  login & retrieve_pwd   start-->
+    <color name="input_box_bg_color">#26ffffff</color>
+    <color name="divider_color">@color/half_transparent_white</color>
+    <color name="input_text_hint">#aaaaaa</color>
+    <color name="input_text">#dddddd</color>
+    <color name="text">#cccccc</color>
+    <color name="btn_enabled">#fb9b20</color>
+    <color name="btn_disabled">#aaaaaa</color>
+    <!--color  login & retrieve_pwd   end-->
+
+    <!--color common start-->
+    <!--半透明白色-->
+    <color name="half_transparent_white">#7fffffff</color>
+    <!--color common end-->
+
+    <color name="dialog_login_bg_dark">#af000000</color>
+
+    <color name="profile_text_color">#cccccc</color>
+    //-------------------------
+
+    <color name="med_type_text_user">#828282</color>
+    <color name="med_num_text_user">#ff9600</color>
+    <color name="med_info_lay_user">#f2f2f2</color>
+    <color name="med_div_line_user">#bbbbbb</color>
+    <color name="med_div_setting_user">#c1c1c1</color>
+    <color name="med_background_setting">#fbfbfb</color>
+    <color name="med_background_setting_pressed">#34000000</color>
+    <color name="med_tv_scoreinfo">#686868</color>
+    <color name="med_tv_scorenum">#414141</color>
+    <color name="med_tv_getscore">#b1b1b1</color>
+
+    <color name="top_tv_title_setting">#fefefe</color>
+    <color name="med_tv_clecache_num">#787878</color>
+    //feedback
+    <color name="feedback_bg">#f2f2f2</color>
+    <color name="feedback_submit_color">#fcecde</color>
+    <color name="feedback_input">#454545</color>
+
+    //login
+    <color name="log_in_background">#f1f1f1</color>
+    <color name="tv_sign_out">#eeeeee</color>
+    <color name="tv_signup_beflog">#f9d7b9</color>
+    <color name="tv_signup">#fbf0e2</color>
+    <color name="tv_resetbye">#f19108</color>
+    <color name="tv_getit">#fdf2e9</color>
+
+    //recommend
+    <color name="recommend_address">#666666</color>
+    <color name="recommend_address_bg">#fcfcfc</color>
+    <color name="recommend_text_color">#454545</color>
+    //discovery
+    <color name="discovery_username">#6f6f6f</color>
+    <color name="discovery_address">#9d9d9d</color>
+    <color name="discovery_user_bg">#fcfcfc</color>
+    <color name="discovery_eye_time">#808080</color>
+
+    <color name="edit_line_login">#676767</color>
+    <color name="edit_line_login_pressed">#f19108</color>
+    <color name="tv_login">#ffffff</color>
+    <color name="tv_forgetpw">#f19108</color>
+    <color name="tv_line_forgetpw">#f1a437</color>
+    <color name="tv_moresignup">#939393</color>
+    <color name="tv_notsignup">#f1c195</color>
+
+    //found
+    <color name="tvhint_verifinum">#b6b6b6</color>
+    <color name="tv_getverifinum">#fcecde</color>
+
+    //info
+    <color name="tv_infolist">#686868</color>
+    <color name="tv_userinfo">#929292</color>
+    <color name="tv_line_info">#cccccc</color>
+
+    //mynews fans
+    <color name="tv_liked">#828282</color>
+    <color name="div_mynews">#c1c1c1</color>
+    <color name="tv_secondtop">#f19108</color>
+    <color name="tv_secondtop2">#666666</color>
+    <color name="tv_name_fans">#808080</color>
+    <color name="tv_info_fans">#9e9e9e</color>
+    <color name="img_line_fans">#cccccc</color>
+    <color name="tv_userinfo_news">#8c8c8c</color>
+    <color name="tv_msg_news">#6e6e6e</color>
+    <color name="bg_lay_news">#fcfcfc</color>
+    <color name="img_line_news">#cacaca</color>
+    //专题
+    <color name="tv_title_sub">#3d3551</color>
+    <color name="tv_content_sub">#a3a3a3</color>
+    <color name="tv_hadObserved">#b0b0b0</color>
+    <color name="bg1_subcontent">#33000000</color>
+    <color name="bg2_subcontent">#99000000</color>
+    <color name="tv_exp_subcon">#d0d0d0</color>
+    <color name="tv_span_subcon">#666666</color>
+    <color name="tv_title_essay">#353535</color>
+    <color name="tv_title_mysub">#1b1b1b</color>
+    <color name="div_line_mysub">#b0b0b0</color>
+    <color name="tv_span">#f19108</color>
+    <color name="item_divider">#cccccc</color>
+
+    <color name="cirimg_border_color">#f7ba64</color>
+    <color name="tv_color_level">#f19108</color>
+    <color name="div_line_activity">#ffb0b0b0</color>
+
+</resources>
+

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+        <com.xiaoxiang.ioutside.mine.widget.BannerLayout
+            android:id="@+id/activity_detail_banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:autoPlayDuration="4000"
+            app:defaultImage="@null"
+            app:scrollDuration="900"
+            tools:background="#008800"
+            >
+
+
+        </com.xiaoxiang.ioutside.mine.widget.BannerLayout>
+
+        <com.xiaoxiang.ioutside.mine.widget.IndicatorLayout
+            android:layout_below="@+id/activity_detail_banner"
+            android:id="@+id/activity_banner_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#fff"
+            app:indicatorShape="oval"
+            app:indicatorSpace="6dp"
+            app:selectedIndicatorColor="@color/colorAccent"
+            app:selectedIndicatorHeight="4dp"
+            app:selectedIndicatorWidth="4dp"
+            app:unSelectedIndicatorColor="#aaaaaa"
+            app:unSelectedIndicatorHeight="4dp"
+            app:unSelectedIndicatorWidth="4dp" >
+
+
+        </com.xiaoxiang.ioutside.mine.widget.IndicatorLayout>
+
+    </RelativeLayout>
+<!--活动详情介绍-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:id="@+id/activity_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#333"
+            android:lineSpacingExtra="4dp"
+            android:text="尼泊尔ABC大环线徒步 情系喜马拉雅之巅（七日行程）"/>
+        <!--price number-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_height="wrap_content">
+        
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/activity_num"/>
+            <TextView
+                android:id="@+id/activity_detail_num"
+                android:layout_marginLeft="6dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名额剩余20人"/>
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/activity_detail_priceNow"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥6888"/>
+            <TextView
+                android:id="@+id/activity_detail_priceBefore"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:background="@drawable/activity_price_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥8888"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/div_line_activity"/>
+        <!--from-->
+        <LinearLayout
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/activity_from"/>
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来自"/>
+            <TextView
+                android:id="@+id/activity_detail_from"
+                android:layout_marginLeft="3dp"
+                android:padding="2dp"
+                android:background="@drawable/activity_tvbg"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时光户外"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/div_line_activity"/>
+
+        <!--从哪出发-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/activity_position"/>
+            <TextView
+                android:id="@+id/activity_detail_startPlace"
+                android:layout_marginLeft="6dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加得满都出发"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/div_line_activity"/>
+<!--time-->
+        <LinearLayout
+            android:id="@+id/activity_detail_chooseType"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/activity_num"/>
+            <TextView
+                android:id="@+id/activity_detail_type"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@drawable/activity_tvbg2"
+                android:layout_marginLeft="6dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7月13日 1:1 租用装备"/>
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:background="@drawable/activity_enter"/>
+          </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/div_line_activity"/>
+        </LinearLayout>
+<!--4个imageviews-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/acitvity_detail_img1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/activity_schedule"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行程介绍"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/acitvity_detail_img2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/activity_price"
+                />
+            <TextView
+                android:textSize="14sp"
+
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="费用说明"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/acitvity_detail_img3"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/activity_sign"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报名须知"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/acitvity_detail_img4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/activity_experience"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体验评价"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/div_line_activity"/>
+    <!--QA-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/activity_vertical_sign"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常见问题"/>
+    </LinearLayout>
+</LinearLayout>

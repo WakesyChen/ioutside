@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_title"
+        android:layout_width="match_parent"
+        android:layout_height="48.6dp"
+        android:id="@+id/title_mynews_old"/>
+
+    <include
+        layout="@layout/include_secondtop"
+        android:id="@+id/secondtop_mynews"
+        android:layout_below="@id/title_mynews_old"
+        android:layout_width="match_parent"
+        android:layout_height="48.6dp"/>
+
+    <TextView
+        android:id="@+id/tv_remend_mynews"
+        android:layout_below="@id/secondtop_mynews"
+        android:text="@string/tv_remend_noNetwork"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swrf_mynews"
+        android:layout_below="@id/tv_remend_mynews"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recv_newslist"
+            android:layout_below="@id/secondtop_mynews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

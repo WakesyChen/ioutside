@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background_white"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_simple_title_and_rv"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/tv_default"
+        android:text="还没有人赞您的文章或者动态哦"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

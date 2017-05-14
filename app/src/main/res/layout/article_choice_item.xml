@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/choice_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f2f2f2"/>
+
+    <RelativeLayout
+        android:id="@+id/choice_relativeLayout2"
+        android:layout_below="@id/choice_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.xiaoxiang.ioutside.common.CircleImageView
+            android:id="@+id/choice_userPhoto"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
+            />
+
+        <TextView
+            android:id="@+id/choice_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="#fb9b20"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/choice_userPhoto"
+            android:layout_toEndOf="@id/choice_userPhoto" />
+
+        <TextView
+            android:id="@+id/choice_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#454545"
+            android:text="推荐"
+            android:textSize="12dp"
+            android:layout_toRightOf="@id/choice_userName"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/choice_publishTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="时间"
+            android:textColor="#434343"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/choice_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/choice_relativeLayout2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/account_bitmap"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/choice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:text="hahaha"
+        android:textColor="#1b1b1b"
+        android:textSize="16sp"
+        android:layout_below="@id/choice_image"
+        android:layout_alignLeft="@id/choice_image"
+        android:layout_alignStart="@id/choice_image"/>
+
+    <RelativeLayout
+        android:id="@+id/choice_relativeLayout3"
+        android:layout_below="@id/choice_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="16dp">
+        <ImageView
+            android:id="@+id/choice_function_zan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/zan_normal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/choice_likedCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="12"
+            android:textColor="#fb9b20"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/choice_function_zan"
+            android:layout_toStartOf="@id/choice_function_zan"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:id="@+id/choice_function_comment"
+            android:src="@drawable/comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/choice_likedCount"
+            android:layout_toStartOf="@id/choice_likedCount"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/choice_commentCount"
+            android:textSize="12sp"
+            android:text="12"
+            android:textColor="#888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/choice_function_comment"
+            android:layout_toStartOf="@id/choice_function_comment"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/choice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="摘要"
+            android:textColor="#8c8c8c"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/choice_commentCount"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

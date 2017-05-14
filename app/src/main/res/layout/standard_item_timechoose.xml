@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+<LinearLayout
+    android:id="@+id/activity_item_recycler"
+    android:background="@drawable/timeunchoose_bg"
+    android:padding="2dp"
+    android:gravity="center"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+>
+
+
+        <TextView
+            android:id="@+id/activity_time1"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07.02 周二"/>
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/activity_price"
+            android:text="¥8888"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/activity_remainNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余6位"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
