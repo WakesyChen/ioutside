@@ -12,7 +12,6 @@
     android:paddingTop="7dp"
     android:background="#ffffff"
     app:layout_scrollFlags="scroll|enterAlways|snap">
-
     <com.xiaoxiang.ioutside.mine.widget.BannerLayout
         android:id="@+id/choice_bannerlayout"
         android:layout_width="match_parent"
@@ -21,8 +20,6 @@
         app:defaultImage="@null"
         app:scrollDuration="900"
         tools:background="#008800" />
-
-
     <com.xiaoxiang.ioutside.mine.widget.IndicatorLayout
         android:id="@+id/choice_indicatorLayout"
         android:layout_width="match_parent"

@@ -118,14 +118,8 @@ public class HomeChoiceAdapter extends RecyclerView.Adapter<HomeChoiceAdapter.Ch
         Essay essay = list.get(position-1);//bug出现点，不减1下标越界
         boolean liked = essay.isLiked();
         boolean original = essay.isOriginal();
-
-//
-//        holder.choice_userPhoto.setImageResource(R.drawable.account_bitmap);
-//        holder.choice_image.setImageResource(R.drawable.account_bitmap);
-            Glide.with(activity).load(essay.getPhoto()).into(holder.choice_image);
-            Glide.with(activity).load(essay.getUserPhoto()).into(holder.choice_userPhoto);
-//        ImageLoader.getInstance().displayImage(essay.getPhoto(), holder.choice_image);
-//        ImageLoader.getInstance().displayImage(essay.getUserPhoto(), holder.choice_userPhoto);
+        Glide.with(activity).load(essay.getPhoto()).into(holder.choice_image);
+        Glide.with(activity).load(essay.getUserPhoto()).into(holder.choice_userPhoto);
         holder.choice_userName.setText(essay.getUserName());
         holder.choice_title.setText(essay.getTitle() + "");
         holder.choice_likedCount.setText(essay.getLikedCount() + "");
@@ -193,7 +187,6 @@ public class HomeChoiceAdapter extends RecyclerView.Adapter<HomeChoiceAdapter.Ch
     if (position==0&&HEADER==holder.itemType){
 //        给轮播布局设置监听事件、数据源
         holder.bannerLayout.setOnBannerChangeListener(HomeChoiceAdapter.this);
-//       holder.bannerLayout.setViewRes(imgIdlist);//设置本地图片
         if (bannerPhotos != null && bannerPhotos.size() > 0) {
             holder.bannerLayout.setViewUrls(bannerPhotos);//设置网络图片
             holder. bannerLayout.onDataUpdated();

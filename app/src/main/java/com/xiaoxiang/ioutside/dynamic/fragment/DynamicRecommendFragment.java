@@ -101,7 +101,6 @@ public class DynamicRecommendFragment extends Fragment implements Constants,OkHt
 
     private void initData() {
         if (NetworkUtil.isNetworkConnected(getActivity())) {
-            //下拉刷新的监听
             SwipeRefreshLayout.OnRefreshListener listener = new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
                 public void onRefresh() {

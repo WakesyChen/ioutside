@@ -85,7 +85,8 @@ public class CommunityFragment extends Fragment {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
-                if (newState == RecyclerView.SCROLL_STATE_IDLE && lastVisibleItemPosition + 1 == mAdapter.getItemCount()) {
+                if (newState == RecyclerView.SCROLL_STATE_IDLE && lastVisibleItemPosition + 1 ==
+                                mAdapter.getItemCount()) {
                     current_state = STATE_LOAD;
                     pageNo++;
                     Log.i(TAG, "onScrollStateChanged: " + lastVisibleItemPosition);
@@ -97,7 +98,8 @@ public class CommunityFragment extends Fragment {
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (dy > 0) {
-                    lastVisibleItemPosition = ((LinearLayoutManager) recyclerView.getLayoutManager()).findLastVisibleItemPosition();
+                    lastVisibleItemPosition = ((LinearLayoutManager) recyclerView.getLayoutManager())
+                            .findLastVisibleItemPosition();
 
                 }
             }

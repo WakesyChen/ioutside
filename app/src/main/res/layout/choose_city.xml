@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/choose_back"
+            android:src="@drawable/back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择城市"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"/>
+        />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="2dp"
+            android:background="@null"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColorHint="#fff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/cityName"
+            android:hint="请输入城市名"
+            android:layout_width="170dp"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:id="@+id/check"
+            android:textSize="18sp"
+            android:background="@drawable/bg_post"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="确定"
+            android:layout_width="60dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门城市"/>
+    <GridView
+
+        android:id="@+id/city_GridView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:numColumns="3">
+
+    </GridView>
+
+</LinearLayout>

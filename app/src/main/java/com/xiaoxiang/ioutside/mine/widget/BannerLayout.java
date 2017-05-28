@@ -30,22 +30,15 @@ import java.util.List;
  * Created by dongjunkun on 2015/8/9.
  */
 public class BannerLayout extends RelativeLayout {
-
     private ViewPager pager;
     //指示器容器
     private IndicatorLayout indicatorContainer;
-
     private int WHAT_AUTO_PLAY = 1000;
-
     private boolean isAutoPlay = true;
-
     private int itemCount;
-
     private int autoPlayDuration = 4000;
     private int scrollDuration = 900;
-
     private int defaultImage;
-
     private OnBannerChangeListener onBannerChangeListener;
     private static final String TAG = "BannerLayout";
     private Handler handler = new Handler(new Handler.Callback() {
@@ -60,34 +53,26 @@ public class BannerLayout extends RelativeLayout {
             return false;
         }
     });
-
     public BannerLayout(Context context) {
         super(context);
         init(null, 0);
     }
-
     public BannerLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
-
     public BannerLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs, defStyleAttr);
     }
-
     private void init(AttributeSet attrs, int defStyle) {
-
         TypedArray array = getContext().obtainStyledAttributes(attrs, R.styleable.BannerLayoutStyle, defStyle, 0);
-
         autoPlayDuration = array.getInt(R.styleable.BannerLayoutStyle_autoPlayDuration, autoPlayDuration);
         scrollDuration = array.getInt(R.styleable.BannerLayoutStyle_scrollDuration, scrollDuration);
         isAutoPlay = array.getBoolean(R.styleable.BannerLayoutStyle_isAutoPlay, isAutoPlay);
         defaultImage = array.getResourceId(R.styleable.BannerLayoutStyle_defaultImage, defaultImage);
         array.recycle();
-
     }
-
     //添加本地图片路径
     public void setViewRes(List<Integer> viewRes) {
         List<View> views = new ArrayList<>();
@@ -239,7 +224,6 @@ public class BannerLayout extends RelativeLayout {
             handler.sendEmptyMessageDelayed(WHAT_AUTO_PLAY, autoPlayDuration);
         }
     }
-
     @Override
     protected void onWindowVisibilityChanged(int visibility) {
         super.onWindowVisibilityChanged(visibility);

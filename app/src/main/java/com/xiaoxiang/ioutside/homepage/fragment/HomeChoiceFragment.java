@@ -81,10 +81,7 @@ public class HomeChoiceFragment extends Fragment implements Constants, OkHttpMan
 
         return view;
     }
-
     //初始化banner数据源
-
-
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -109,12 +106,7 @@ public class HomeChoiceFragment extends Fragment implements Constants, OkHttpMan
     }
 
     private void initData() {
-
-
         if (NetworkUtil.isNetworkConnected(getActivity())) {
-
-
-
             //下拉刷新的监听
             SwipeRefreshLayout.OnRefreshListener listener = new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
@@ -131,7 +123,6 @@ public class HomeChoiceFragment extends Fragment implements Constants, OkHttpMan
                             super.onError(request, e);
                             ToastUtils.show("网络出现错误");
                         }
-
                         @Override
                         public void onResponse(String response) {
                             super.onResponse(response);
@@ -142,7 +133,6 @@ public class HomeChoiceFragment extends Fragment implements Constants, OkHttpMan
                             BaseResponse bannerResponse = gson.fromJson(response, objectType);
                             GBannerInfoList gBannerInfoList = (GBannerInfoList) bannerResponse.getData();
                             List<BannerInfo> bannerInfoList = gBannerInfoList.getList();//得到banner中的list数据
-
                             List<String> bannerPhotos = new ArrayList<>();//网络获取banner
                             List<String> titles = new ArrayList<>();
                             List<String> bannerUrls = new ArrayList<>();

@@ -65,4 +65,5 @@ dependencies {
     compile 'com.ms-square:expandableTextView:0.1.4'
     compile 'com.android.support:cardview-v7:24.1.1'
     compile project(':PhotoPicker')
+    compile files('libs/BaiduLBS_Android.jar')
 }

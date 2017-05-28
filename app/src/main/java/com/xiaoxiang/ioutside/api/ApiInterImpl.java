@@ -596,6 +596,11 @@ public class ApiInterImpl implements Api {
     public String getBigVQAList(String token, int circleID, int pageNo, int pageSize) {
         return "http://ioutside.com/xiaoxiang-backend/community/get-expert-qa-list-by-circle-id.do?token="+token+"&circleID="+circleID+"&pageNo="+pageNo+"&pageSize="+pageSize;
     }
+
+    @Override
+    public String getWeatherData(String cityName) {
+        return "http://v.juhe.cn/weather/index?cityname="+cityName+"&key=738e4475d52a299d9195bd2474ed2e63";
+    }
 }
 
 

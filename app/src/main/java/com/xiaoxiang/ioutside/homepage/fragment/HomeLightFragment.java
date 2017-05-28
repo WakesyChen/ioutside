@@ -217,7 +217,7 @@ public class HomeLightFragment extends Fragment implements Constants, OkHttpMana
                 intent.putExtra("url", mAdapter.getDataSet().get(position).getUrl());
                 startActivity(intent);
             }
-
+//                友盟分享
             @Override
             public void onShareClick(View view, int position) {
                 String image=mAdapter.getDataSet().get(position).getPhoto();

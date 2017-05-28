@@ -15,6 +15,7 @@ import android.widget.ImageView;
 
 import com.xiaoxiang.ioutside.R;
 import com.xiaoxiang.ioutside.homepage.activity.ArticleShareActivity;
+import com.xiaoxiang.ioutside.homepage.activity.WeatherActivity;
 
 /**
  * Created by zhang on 2016/4/15 0015.
@@ -25,7 +26,8 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
     private ViewPager homepage_viewPager;
     private TabLayout homepage_titles;
     private static final String TAG = "HomepageFragment";
-    private String[] titles=new String[]{"精选", "订阅", "专题", "光影"};
+//    private String[] titles=new String[]{"精选", "订阅", "专题", "光影"};
+    private String[] titles=new String[]{"精选", "专题", "光影"};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.homepage_fragment, container, false);
@@ -50,9 +52,12 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
         String token = getActivity().getIntent().getStringExtra("token");
         switch (view.getId()) {
             case R.id.homepage_share:
-                homepageShare.setSelected(true);//要跳转到推荐外链
-                Intent intent = new Intent(getActivity(), ArticleShareActivity.class);
-                intent.putExtra("token", token);
+//                homepageShare.setSelected(true);//要跳转到推荐外链
+//                Intent intent = new Intent(getActivity(), ArticleShareActivity.class);
+//                intent.putExtra("token", token);
+//                startActivity(intent);
+//                跳到天气
+                Intent intent=new Intent(getActivity(), WeatherActivity.class);
                 startActivity(intent);
                 break;
         }
@@ -70,11 +75,11 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
             switch (position) {
                 case 0:
                     return new HomeChoiceFragment();
+//                case 1:
+//                    return new HomeSubscribeFragment();
                 case 1:
-                    return new HomeSubscribeFragment();
-                case 2:
                     return new SubMainFragment();
-                case 3:
+                case 2:
                     return new HomeLightFragment();
                 default:
                     return new HomeChoiceFragment();
@@ -83,7 +88,7 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
 
         @Override
         public int getCount() {
-            return 4;
+            return 3;
         }
 
         @Override

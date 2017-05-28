@@ -228,5 +228,6 @@ public interface Api {
     String getHotNote(String token,int pageNo,int pageSize);
 //    获得大V问答的列表
     String getBigVQAList(String token,int circleID,int pageNo,int pageSize);
-
+//    获取天气的接口
+    String getWeatherData(String cityName);
 }
