@@ -83,7 +83,8 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
     private void refreshData(String cityName) {
         ApiInterImpl api=new ApiInterImpl();
         OkHttpManager okHttpManager=OkHttpManager.getInstance();
-        okHttpManager.getStringAsyn(api.getWeatherData(cityName), new OkHttpManager.ResultCallback<String>(){
+        okHttpManager.getStringAsyn(api.getWeatherData(cityName),
+                                    new OkHttpManager.ResultCallback<String>(){
             @Override
             public void onError(Request request, Exception e) {
                 super.onError(request, e);

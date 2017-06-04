@@ -55,35 +55,26 @@ import butterknife.ButterKnife;
 
 
 public class MainActivity extends AppCompatActivity {
-
-
     private OnMsgCountReceivedListener msgCountReceivedListener;
-
     @Bind(R.id.vp_home_page)
     ViewPager pages;
     @Bind(R.id.tl_nav)
     TabLayout tlNav;
-
     private MessageCount.DataBean messageCountInfo;
-
-
     private int[] tabDrawableIds = {R.drawable.bottom_layout_homepage,
             R.drawable.bottom_layout_discovery, R.drawable.bottom_layout_activities, R.drawable.bottom_layout_me};
-
     private String[] tabText = new String[]{"首页", "动态", "活动", "我"};
 
     private FragmentManager fragmentManager;
     private static final int WRITE_EXTERNAL_STORAGE_REQUEST_CODE = 10;
     private static final int CAMERA_REQUEST_CODE = 11;
     private long exitTime = 0;
-    //private CachedInfo mCachedInfo;
     private String token;
     private static final String TAG = "MainActivity";
     private int localVersion;//当前本地版本号
     private int onlineVersion;//当前最新版本
     private String urlUpdate="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaoxiang.ioutside";//下载链接
 //
-//   private String urlUpdate="http://www.baidu.com";//下载链接
     private String versionUrl="http://ioutside.com/xiaoxiang-backend/app/get-recent-version?type=2";//获取version
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,14 +102,11 @@ public class MainActivity extends AppCompatActivity {
             mCachedInfo.setToken(token);
             mCachedInfo.setUserId(userId);
         }
-
         if (token == null || userId == -1) {
             token = mCachedInfo.getToken();
         }
-
         initEvent();
         registerLogoutReceiver();
-
         Log.d(TAG, "userId -- >" + mCachedInfo.getUserId());
     }
 
@@ -271,14 +259,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     public class MainPageAdapter extends FragmentPagerAdapter {
-
         public MainPageAdapter(android.support.v4.app.FragmentManager fm) {
             super(fm);
         }
-
         @Override
         public android.support.v4.app.Fragment getItem(int position) {
-
             switch (position) {
                 case 0:
                     return new HomepageFragment();
@@ -298,12 +283,10 @@ public class MainActivity extends AppCompatActivity {
                     return new HomepageFragment();
             }
         }
-
         @Override
         public int getCount() {
             return 4;
         }
-
     }
 
     //---------------------------new  -----------------------------------//
