@@ -558,7 +558,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements Constant
                 String url = "http://ioutside.com/xiaoxiang-backend/article-share.html?articleID=" + id;
 //                setShareContent(title, url,photo,content);
                 UmengShare.setShareContent(ArticleDetailActivity.this,title,url,photo,content);
-
             }
         });
     }

@@ -145,7 +145,6 @@ public class HomeChoiceFragment extends Fragment implements Constants, OkHttpMan
                                 mAdapter.setBannerData(bannerPhotos, titles, bannerUrls);
 
                             }
-
                             stopRefresh=true;
                             if (stopRefresh&&stopRefresh1) {
                                 swipeRefresh_choice.setRefreshing(false);

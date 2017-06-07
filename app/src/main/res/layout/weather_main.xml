@@ -136,7 +136,7 @@
             <TextView
                 android:id="@+id/weather_futureTemp1"
                 android:gravity="center"
-                android:text="23℃~35℃"
+                android:text="19℃~27℃"
                 android:textSize="22sp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -147,13 +147,13 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:src="@drawable/weather_sunny"/>
+                android:src="@drawable/weather_cloud"/>
             <TextView
                 android:id="@+id/weather_futureTime1"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:text="星期六"
+                android:text="星期二"
                 android:textSize="22sp"
                 android:layout_height="wrap_content"
                 android:textColor="#fff" />
@@ -170,7 +170,7 @@
                 android:textColor="#fff"
                 android:id="@+id/weather_futureTemp2"
                 android:gravity="center"
-                android:text="22℃~33℃"
+                android:text="22℃~32℃"
                 android:textSize="22sp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -180,14 +180,14 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:src="@drawable/weather_cloud"/>
+                android:src="@drawable/weather_sunny"/>
             <TextView
                 android:textColor="#fff"
                 android:id="@+id/weather_futureTime2"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:text="星期天"
+                android:text="星期三"
                 android:textSize="22sp"
                 android:layout_height="wrap_content" />
 
@@ -203,7 +203,7 @@
                 android:textColor="#fff"
                 android:id="@+id/weather_futureTemp3"
                 android:gravity="center"
-                android:text="25℃~33℃"
+                android:text="24℃~33℃"
                 android:textSize="22sp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -213,14 +213,14 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:src="@drawable/weather_cloud"/>
+                android:src="@drawable/weather_sunny"/>
             <TextView
                 android:textColor="#fff"
                 android:id="@+id/weather_futureTime3"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:text="星期一"
+                android:text="星期四"
                 android:textSize="22sp"
                 android:layout_height="wrap_content"
                 android:textIsSelectable="true" />

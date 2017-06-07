@@ -72,12 +72,13 @@ public class RecommendActivitiesAdapter extends PullAddMoreAdapter<Bean.Recommen
         Bean.RecommendActivitySubject.Data.ActivitySubject item = getDataSet().get(position);
 
         Context context = viewHolder.itemView.getContext();
-
         Glide.with(context).load(item.subjectPhoto).into(viewHolder.mIvLargePhoto);
-
         Glide.with(context).load(item.activityList.get(0).photo).into(viewHolder.mIvImage1);
-//        Glide.with(context).load(item.activityList.get(1).photo).into(viewHolder.mIvImage2);
-//        Glide.with(context).load(item.activityList.get(2).photo).into(viewHolder.mIvImage3);
+
+        Glide.with(context).load(item.activityList.get(0).photo).into(viewHolder.mIvImage2);
+        Glide.with(context).load(item.activityList.get(0).photo).into(viewHolder.mIvImage3);
+        viewHolder.mIvImage2.setEnabled(false);
+        viewHolder.mIvImage3.setEnabled(false);
 
         viewHolder.mTvText1.setText(item.activityList.get(0).subTitle);
 //

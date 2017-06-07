@@ -95,12 +95,12 @@ public class ActivitiesFragment extends Fragment implements OnItemClickListener,
                         get(position - 1).activityList.get(0).activityId);
                 break;
             case R.id.tv_second_text:
-                viewActivityDetail(mRecommendActivitiesAdapter.getDataSet().
-                        get(position - 1).activityList.get(1).activityId);
+//                viewActivityDetail(mRecommendActivitiesAdapter.getDataSet().
+//                        get(position - 1).activityList.get(1).activityId);
                 break;
             case R.id.tv_third_text:
-                viewActivityDetail(mRecommendActivitiesAdapter.getDataSet().
-                        get(position - 1).activityList.get(2).activityId);
+//                viewActivityDetail(mRecommendActivitiesAdapter.getDataSet().
+//                        get(position - 1).activityList.get(2).activityId);
                 break;
         }
     }

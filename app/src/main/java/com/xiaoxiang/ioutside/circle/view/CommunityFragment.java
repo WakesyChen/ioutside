@@ -93,14 +93,12 @@ public class CommunityFragment extends Fragment {
                     getCircleList();
                 }
             }
-
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (dy > 0) {
                     lastVisibleItemPosition = ((LinearLayoutManager) recyclerView.getLayoutManager())
                             .findLastVisibleItemPosition();
-
                 }
             }
         });
