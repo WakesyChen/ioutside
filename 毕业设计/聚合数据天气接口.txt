@@ -1,0 +1,108 @@
+http://v.juhe.cn/weather/index?cityname=咸宁&key=738e4475d52a299d9195bd2474ed2e63
+{
+    "resultcode": "200",
+    "reason": "successed!",
+    "result": {
+        "sk": {
+            "temp": "24",
+            "wind_direction": "北风",
+            "wind_strength": "4级",
+            "humidity": "45%",
+            "time": "16:05"
+        },
+        "today": {
+            "temperature": "15℃~26℃",
+            "weather": "多云",
+            "weather_id": {
+                "fa": "01",
+                "fb": "01"
+            },
+            "wind": "微风",
+            "week": "星期三",
+            "city": "武汉",
+            "date_y": "2017年05月24日",
+            "dressing_index": "舒适",
+            "dressing_advice": "建议着长袖T恤、衬衫加单裤等服装。年老体弱者宜着针织长袖衬衫、马甲和长裤。",
+            "uv_index": "弱",
+            "comfort_index": "",
+            "wash_index": "较适宜",
+            "travel_index": "较适宜",
+            "exercise_index": "较适宜",
+            "drying_index": ""
+        },
+        "future": {
+            "day_20170524": {
+                "temperature": "15℃~26℃",
+                "weather": "多云",
+                "week": "星期三",
+            },
+            "day_20170525": {
+                "temperature": "16℃~28℃",
+                "weather": "晴",
+                "weather_id": {
+                    "fa": "00",
+                    "fb": "00"
+                },
+                "wind": "微风",
+                "week": "星期四",
+                "date": "20170525"
+            },
+            "day_20170526": {
+                "temperature": "17℃~31℃",
+                "weather": "晴",
+                "weather_id": {
+                    "fa": "00",
+                    "fb": "00"
+                },
+                "wind": "微风",
+                "week": "星期五",
+                "date": "20170526"
+            },
+            "day_20170527": {
+                "temperature": "19℃~31℃",
+                "weather": "多云转晴",
+                "weather_id": {
+                    "fa": "01",
+                    "fb": "00"
+                },
+                "wind": "微风",
+                "week": "星期六",
+                "date": "20170527"
+            },
+            "day_20170528": {
+                "temperature": "20℃~32℃",
+                "weather": "多云",
+                "weather_id": {
+                    "fa": "01",
+                    "fb": "01"
+                },
+                "wind": "微风",
+                "week": "星期日",
+                "date": "20170528"
+            },
+            "day_20170529": {
+                "temperature": "16℃~28℃",
+                "weather": "晴",
+                "weather_id": {
+                    "fa": "00",
+                    "fb": "00"
+                },
+                "wind": "微风",
+                "week": "星期一",
+                "date": "20170529"
+            },
+            "day_20170530": {
+                "temperature": "19℃~31℃",
+                "weather": "多云转晴",
+                "weather_id": {
+                    "fa": "01",
+                    "fb": "00"
+                },
+                "wind": "微风",
+                "week": "星期二",
+                "date": "20170530"
+            }
+        }
+    },
+    "error_code": 0
+}
